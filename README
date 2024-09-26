@@ -1,0 +1,20 @@
+Riassumo qui brevemente lo scopo del progetto: risolvere le'quazioni di Navier-Stokes incomprimibile in un dominio cartesiano alle differenze finite. A partire da tale risolutore si aggiunge un termine di penalizzazione al modello per simulare flussi in un dominio qualsiasi generando un'opportuna maschera (equazione di Brinkmann).
+
+Il lavoro di modellizzazione numerica: metodo di proiezione + differenze finite ha richiesto molto tempo, dunque l'implementazione in C++ e' ancora low-level nonostante il risolutore per Navier-Stokes funzioni e sia stato gia' validato. (Converegenza primo ordine in tempo, secondo in spazio).
+
+Il codice, una volta completato sara' sufficientemente flessibile da risolvere problemi stazionari e non stazionari fra cui, Brinkmann flow, (non)-Stationary Navier-Stokes, equazioni paraboliche, problema di Poisson, Equazioni di Stokes e di Eulero. L'ipotesi che resta vincolante e' l'incomprimibilita'.
+
+Nella cartella ripoorto i seguenti file:
+
+1. finite_differences_leonardo.cpp: codice funzionante ma low-level (presente anche suo .exe).
+Da eseguire con moduli per Calcolo Scientifico di P. Africa.
+
+2. MeshHandler.hpp, Grid.hpp: solo per dimostrazione di come sto iniziando a ristrutturare il codice per il corso di PACS.
+
+3. Due cartelle che contengono output della soluzione di Navier Stokes evolutuvo e di un problema parabolico. In paraview si puo' aprire il file .pvsm
+
+4. File .py delle convergenze ottenute. Pe ri vari sottoproblemi e per Navier-Stokes.
+
+
+
+
